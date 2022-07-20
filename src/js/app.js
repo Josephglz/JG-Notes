@@ -66,8 +66,8 @@ function viewNote(id)
 function editNote(id)
 {
     let note = notes.find(note => note.id == id);
-    let title = prompt('Ingrese un titulo:');
-    let content = prompt('Ingrese el contenido de la nota:');
+    let title = prompt('Ingrese el nuevo titulo:', note.title);
+    let content = prompt('Ingrese el nuevo contenido de la nota:', note.content);
     let date = getDate();
     note.title = title;
     note.content = content;
