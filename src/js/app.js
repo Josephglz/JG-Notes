@@ -37,12 +37,17 @@ function showNotes() {
         </div>
         <div class="note-buttons">
             
-            <button class="view-note btn-${id}" onclick="viewNote(${id});"><i class="fa-solid fa-eye"></i></button>
+            <button class="view-note btn-${id}" onclick="viewNote(${id});" style="display: none;"><i class="fa-solid fa-eye"></i></button>
             <button class="edit-note" onclick="editNote(${id});"><i class="fa-solid fa-pen"></i></button>
             <button class="delete-note" onclick="deleteNote(${id});"><i class="fa-solid fa-trash"></i></button>
         </div>
         `;
         document.querySelector('.wrapper').appendChild(noteContainer);
+        let btnTemp = document.querySelector('.btn-' + id);
+        if(note.content.length > 100) {
+            btnTemp.style.removeProperty('display');
+        }
+
     });
 }
 
@@ -83,22 +88,6 @@ function deleteNote(id)
     notes.splice(id, 1);
     localStorage.setItem("notes", JSON.stringify(notes));
     showNotes();
-    /*
-    console.log(id);
-    let noteID = notes.find(note => note.id == id);
-    console.log(noteID);
-    let confirmDel = confirm("Are you sure you want to delete this note?");
-    if(!confirmDel) return;
-    if(notes.length == 1)
-    {
-        notes.splice(0, 1);
-    }
-    else
-    {
-        notes.splice(noteID.id, 1);
-    }
-    localStorage.setItem('notes', JSON.stringify(notes));
-    showNotes();*/
 }
 /////////////////////////////////////////////////////////
 function getDate() {
