@@ -54,3 +54,5 @@ function getDate() {
     let second = date.getSeconds();
     return `${day}/${month}/${year} - ${hour}:${minute}:${second}`;
 }
+
+window.onload = showNotes();
