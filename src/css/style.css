@@ -21,16 +21,71 @@ body
 {
     background-color: #16213E;
     color: #F7F7F7;
+    border-radius: 0 0 15px 0;
+}
+
+.note-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 12px 0 12px;
+}
+
+.note-title
+{
+    width: 64%;
+    font-size: 20px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.note-date
+{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.2;
 }
 
 .note
 {
     overflow: hidden;
     text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 3; /* number of lines to show */
-   line-clamp: 3;
-   -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding: 12px 12px 0 12px;
+}
+
+.note-buttons
+{
+    align-items: left;
+    justify-items: space-between;
+    padding: 12px 12px 12px 12px;
+}
+
+.edit-note
+{
+    width: 15%;
+    border: none;
+    background-color: #FF9F29;
+    color: #fff;
+    font-size: 20px;
+}
+
+.delete-note
+{
+    width: 15%;
+    border: none;
+    background-color: #E23E57;
+    color: #fff;
+    font-size: 20px;
 }
 
 .float{
@@ -39,7 +94,7 @@ body
 	height:60px;
 	bottom:20px;
 	right:20px;
-	background-color:#12d640;
+	background-color:#29C7AC;
     border: none;
 	color:#FFF;
 	border-radius:50px;
@@ -54,25 +109,62 @@ body
 /* RESPONSIVE */
 
 /* Mobile */
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 600px) 
+{
+    .note-title
+    {
+        width: 55%;
+    }
 }
 
 /* Tablet, Mobil vertical */
-@media only screen and (min-width: 600px) {
-
+@media only screen and (min-width: 600px) 
+{
+    .note-title
+    {
+        width: 75%;
+    }
 }
 
 /* Tablet, Mobil horizontal */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) 
+{
+    .note-title
+    {
+        width: 62%;
+    }
 
+    .float
+    {
+        width: 95%;
+    }
 }
 
 /* Laptop, Desktop */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) 
+{
+    .note-title
+    {
+        width: 55%;
+    }
+
+    .float
+    {
+        width: 96%;
+    }
 
 }
 
 /* Large device size */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) 
+{
+    .note-title
+    {
+        width: 62%;
+    }
+
+    .float
+    {
+        width: 65px;
+    }
 }
