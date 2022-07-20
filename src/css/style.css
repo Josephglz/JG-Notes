@@ -57,6 +57,16 @@ body
     opacity: 0.2;
 }
 
+.note .expanded
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    padding: 0px 0px 0px 0px;
+}
+
 .note
 {
     overflow: hidden;
@@ -65,7 +75,7 @@ body
     -webkit-line-clamp: 3;
     line-clamp: 3;
     -webkit-box-orient: vertical;
-    padding: 12px 12px 0 12px;
+    padding: 0px 12px 0px 12px;
 }
 
 .note-buttons
@@ -73,6 +83,15 @@ body
     align-items: left;
     justify-items: space-between;
     padding: 12px 12px 12px 12px;
+}
+
+.view-note
+{
+    width: 15%;
+    border: none;
+    background-color: #3eb47d;
+    color: #fff;
+    font-size: 20px;
 }
 
 .edit-note
@@ -120,6 +139,11 @@ body
     {
         width: 55%;
     }
+
+    .note
+    {
+        padding: 0px 12px 0px 12px;
+    }
 }
 
 /* Tablet, Mobil vertical */
@@ -129,6 +153,11 @@ body
     {
         width: 75%;
     }
+
+    .note
+    {
+        padding: 0px 12px 0px 12px;
+    }
 }
 
 /* Tablet, Mobil horizontal */
@@ -137,6 +166,10 @@ body
     .note-title
     {
         width: 62%;
+    }
+    .note
+    {
+        padding: 0px 12px 0px 12px;
     }
 
     .float
@@ -152,6 +185,10 @@ body
     {
         width: 55%;
     }
+    .note
+    {
+        padding: 0px 12px 0px 12px;
+    }
 
     .float
     {
@@ -166,6 +203,10 @@ body
     .note-title
     {
         width: 62%;
+    }
+    .note
+    {
+        padding: 0px 12px 0px 12px;
     }
 
     .float
