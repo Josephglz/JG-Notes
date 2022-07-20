@@ -3,3 +3,76 @@
     margin: 0;
     padding: 0;
 }
+
+body
+{
+    background: #1A1A2E;
+}
+
+.wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 24px;
+    gap: 24px;
+}
+
+.note-container
+{
+    background-color: #16213E;
+    color: #F7F7F7;
+}
+
+.note
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:#12d640;
+    border: none;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+
+/* RESPONSIVE */
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Tablet, Mobil vertical */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Tablet, Mobil horizontal */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Laptop, Desktop */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large device size */
+@media only screen and (min-width: 1200px) {
+}
