@@ -8,7 +8,7 @@
 Simple Notes APP build with HTML, CSS and Js.
 
 ## Live Demo
-> http://jgnotes.josephglz.me
+> http://jgnotes.josephglz.com
 
 
 ## Screenshot
